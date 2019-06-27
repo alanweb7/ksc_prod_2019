@@ -2,7 +2,7 @@
 <widget id="com.kcode360.kcode" version="19.0.31" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>KSCODE</name>
     <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://spottec.com.br/">SPOTTEC</author>
+    <author email="contato@kscode.com.br" href="http://spottec.com.br/">SPOTTEC</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
