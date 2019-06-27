@@ -1,0 +1,40 @@
+<ion-content class="pg-avaliacao" padding>
+  <button ion-button icon-only (click)="fecharAvaliacao()" class="bt-fechar">
+        <ion-icon name="close"></ion-icon>
+    </button>
+
+  <h2>{{texto_push}}</h2><br>
+    <form class="" [formGroup]="pushForm">
+      <ion-list class="index-formularios">
+            <ion-item id="home-input1">
+              <ion-label>
+                  <ion-icon name="pricetag" color="primary"></ion-icon>
+              </ion-label>
+              <ion-input name="titulo" type="text" [(ngModel)]="model.titulo" formControlName="titulo" placeholder="{{campo_1}}"></ion-input>
+          </ion-item>
+          <div><p *ngIf="errorTitulo" class="error"> {{messageTitulo}}</p></div>
+          <ion-item id="home-input1">
+            <ion-label>
+                <ion-icon name="list-box" color="primary"></ion-icon>
+            </ion-label>
+            <ion-input name="mensagem" type="text" [(ngModel)]="model.mensagem" formControlName="mensagem" placeholder="{{campo_2}}"></ion-input>
+        </ion-item>
+        <div><p *ngIf="errorMessagem" class="error"> {{messageMessagem}}</p></div>
+      </ion-list>
+  </form> 
+  <div> 
+    
+       
+          <ion-grid>
+              <ion-row>
+                  <ion-col col-6>
+                      <button ion-button block round (click)="createPusg()" class="facebook">{{btn_enviar}}</button>  
+                  </ion-col>
+                  <ion-col col-6>
+                      <button ion-button block round (click)="fecharAvaliacao()" class="bt-voltar">{{btn_cancelar}}</button>  
+                  </ion-col>
+              </ion-row>
+          </ion-grid>   
+  </div>
+
+</ion-content>

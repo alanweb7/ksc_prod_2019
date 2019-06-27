@@ -1,0 +1,117 @@
+page-notificacao-push {
+    .scroll-content {
+        padding: 80px 0 0 0;
+        margin-top: 0 !important;
+        > h2 {
+            padding: 0 20px;
+            text-align: center;
+            font-size: 1.3em;
+            margin: 0;
+            color: #fff;
+        }
+        > h1 {
+            padding: 0 20px;
+            text-align: center;
+            font-size: 1.8em;
+            text-shadow: 0 0 20px #000;
+            margin: 10px 0 0 0;
+            font-weight: bold;
+            color: white;
+        }
+    }
+    .bt-finalizar {
+        padding: 10px;
+    }
+    ion-content{
+              z-index:9999999;
+    }
+    ion-content.pg-avaliacao.content.content {
+        background:url(../assets/imgs/2_Background.jpg);
+        background-size: cover;
+      
+    }
+    .index-formularios {
+        padding-top: 15px;
+        .error{
+            text-align: center;
+            color:#fff;
+        }
+        .item{
+            background: #fff;
+            padding-left: 0;
+            min-height: 3.5em;
+            margin-top: 10px;
+            padding-top: 10px;
+            .label{
+                margin: 0;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                .icon-md .icon-ios {
+                    margin: 0;
+                    color: rgb(5, 32, 73) ;
+                }
+            }
+            
+            .button{
+               
+                background: #DC0000 !important;
+                border-radius: 10px;
+                    //height: 50px;
+                    .icon-md  {
+                        margin: 5px; 
+                       width: 20px;
+                       text-align: center;
+                       color: #fff;
+                       font-size: 2.5em;
+                   }
+            }
+           
+            .text-input {
+                color: #555;
+                font-size: 14px;
+                text-align: left;
+                &::placeholder {
+                    color: #555;
+                    opacity: 0.5;
+                }
+            }
+
+        }
+    }
+    .bt-fechar {
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: none;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        margin: 0;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 0.7em;
+    }
+    .button {
+        &.facebook {
+            background:#DC0000 !important;
+              color: #FFF;
+            font-weight: normal;
+            height: 50px;
+        }
+        &.bt-voltar {
+            background: #6e7072;
+            color: #FFF;
+            font-weight: normal;
+            height: 50px;
+        }
+
+        &.bt-cadatro {
+            background: #32db64;
+            color: #FFF;
+            font-weight: normal;
+            margin-top: 0;
+            
+        }
+    }
+   
+}

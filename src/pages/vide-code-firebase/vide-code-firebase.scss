@@ -1,0 +1,48 @@
+page-vide-code-firebase {
+    input[type='file'] {
+        display: none
+      }
+      
+      .input-wrapper label {
+        background-color:  rgb(5, 32, 73) !important;
+        border-radius: 5px;
+        color: #fff;
+        margin: 10px;
+        padding: 6px 20px
+      }
+      
+      .input-wrapper label:hover {
+        background-color: #2980b9
+      }
+    .button {
+       // width: 80px;
+        &.facebook {
+            background: rgb(5, 32, 73) !important;
+            background: -moz-linear-gradient(-45deg, rgba(5, 32, 73,1) 0%, rgb(0, 0, 0) 100%) !important;
+            background: -webkit-linear-gradient(-45deg, rgba(5, 32, 73 ,1) 0%, rgb(0, 0, 0) 100%) !important;
+            background: linear-gradient(135deg, rgba(5, 32, 73, 1) 0%, rgb(0, 0, 0) 100%) !important;
+            color: #FFF;
+            font-weight: normal;
+        }
+        &.bt-pause {
+            background: #494a4b;
+            color: #FFF;
+            font-weight: normal;
+        }
+
+        &.bt-resume {
+            background: #024416;
+            color: #FFF;
+            font-weight: normal;
+          
+              //  height: 4rem;
+        }
+        &.bt-cancel {
+            background: #cc0123;
+            color: #FFF;
+            font-weight: normal;
+            
+              //  height: 4rem;
+        }
+    }
+}

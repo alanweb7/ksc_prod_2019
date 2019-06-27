@@ -1,0 +1,65 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      <ion-title>Bônus</ion-title>
+      <ion-buttons end>
+              <button ion-button icon-only (click)="linkNotificacao()">
+                  <ion-icon name="md-notifications"></ion-icon>
+                  
+                  <ion-badge color="danger" class="badge-top"  *ngIf="not">+{{not}}</ion-badge>
+            </button>
+      </ion-buttons>
+     
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+      <ion-refresher (ionRefresh)="doRefresh($event)">
+              <div class="spinner">
+                  <div class="double-bounce1"></div>
+                  <div class="double-bounce2"></div>
+              </div>
+           
+          </ion-refresher>
+  <div class="topo-user" padding>
+      <h3>SALDO DISPONÍVEL</h3>
+      <h1><span>R$ </span> 300</h1>
+    
+      <button ion-button block (click)="TransferModal()">TRANSFERIR SALDO</button>
+      <!-- <button ion-button small round (click)="relatorioModal()">EXTRATO FINANCEIRO</button>
+      <a></a> -->
+  </div>
+
+  <div class="list-estabelecimentos">
+      <h1>Clientes Indicados</h1>
+      <p *ngIf="estab && estab.length == 0; else moviesList">Sem indicações no momento.</p>
+
+      <ng-template #moviesList>  
+        <ion-list>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="https://scontent.ffor9-1.fna.fbcdn.net/v/t1.0-9/13770285_1042307699193246_1135690955881081081_n.jpg?_nc_cat=105&_nc_eui2=AeFELMGzjMkkQY6T76Km35OIL2CR_InozVkEyLZj_CoyDP-Lyo7R_JHZ2qULOLccMEvaNYvIww9dCuqk99FuNDBGge-7h1VkaplMn_auv_sQJQ&_nc_ht=scontent.ffor9-1.fna&oh=15af0c834daadd0d52cb20e14639b5c2&oe=5D650359">
+            </ion-avatar>
+            <h2>Carolina Xavier dos Santos</h2>
+            <h3>Em: 30-04-2019</h3>
+         
+          </ion-item>
+        </ion-list>
+      </ng-template> 
+  </div>
+  <ion-fab right bottom>
+     <!--  <button small ion-fab color="light" (click)="addBanco()"><ion-icon name="add"></ion-icon></button> -->
+     <button ion-fab color="dark"><ion-icon name="arrow-dropup"></ion-icon></button>
+     <ion-fab-list side="top">
+      <button small ion-fab color="dark" (click)="addBanco()"><ion-icon name="add"></ion-icon></button>
+       <button ion-fab color="dark" (click)="listBanco()"><ion-icon ios="ios-list"  md="md-list"></ion-icon></button>
+       <button ion-fab color="dark"  (click)="listTransfer()"><ion-icon ios="ios-repeat" md="md-repeat" ></ion-icon></button>
+      
+     </ion-fab-list>
+  </ion-fab>
+</ion-content>

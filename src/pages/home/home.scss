@@ -1,3 +1,112 @@
-page-home {
 
-}
+page-home {
+    .toolbar-background-md {
+        border-color: #fff;
+        opacity: 0.0;
+        background: #f8f8f8;
+    }
+    .toolbar-background-ios {
+        border-color: #fff;
+        opacity: 0.0;
+        background: #f8f8f8;
+    }
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+        color: #fff;
+        background-color: transparent;
+      }
+    .bar-button-default-ios, .bar-button-clear-ios-default, .bar-button-md-default {
+        color: #fff;
+        background-color: transparent;
+      }
+    .fundo{
+        background: url(../assets/imgs/2_Background.jpg);
+        height: 100%;
+        width: 100%;
+        .button{
+               
+            background: #DC0000 !important;
+          //  border-radius: 10px;
+    }
+    
+
+        .logo_home{
+           margin-top: 20%;
+          
+          // background: #000;
+             p{
+                margin-top: 2%;
+                margin-bottom: 2%;
+                color: #fff;
+                text-align: center;
+            
+                font-size: 12px;
+             }
+              
+           
+            img{
+               display:block;width:40%;height:auto;margin-left:auto;margin-right:auto;
+            }
+        }
+       
+        button#button-white{
+           background: #fff;
+           color: black;   
+           margin-top: 5%;  
+       }
+      
+       .social-share{
+           text-align: center;
+           margin-top: 5%;
+       }
+       
+    }
+    .text-input {
+        text-align: center;
+        font-size: xx-large;
+        text-transform: uppercase;
+        border-radius: 50px;
+    }
+    .scroll-content {
+    padding-bottom: 0 !important;
+    margin-top: 38px;
+    margin-bottom: 56px;
+    text-transform: uppercase;
+    }
+    ion-footer {
+        left: 0;
+        bottom: 0;
+        position: fixed;
+        z-index: 10;
+        display: block;
+        width: 100%;
+        overflow: inherit;
+        height: 50px;
+       /// background: #000;
+        color: #fff;
+        .toolbar {
+            height: 55px;
+            min-height: 55px;
+           
+            .toolbar-background{
+                opacity: 0.0;
+               // background: url(../assets/imgs/2_Background.jpg);
+            }
+        color: #fff;
+            font: bold;
+            text-align: center;
+        span{
+            color: #fff;
+            font: bold;
+            text-align: left;
+            font-size: 13px;
+        }
+        &.adquire-code{
+            text-align: center;
+            color:#fff;
+            font-size: 12px;
+            margin-top: 5%;
+        }
+      }
+    }
+   }
+   

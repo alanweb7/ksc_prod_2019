@@ -1,0 +1,197 @@
+{
+	"home" : {
+		"heading" 		: "hier verbindet sich alles",
+		"button" 	    : "Zugang",
+		"pesquisa"      : "Forschung",
+		"adquira"       : "hol deine code",
+		"code_existe"   : "KSCODE existiert nicht!"
+
+	}
+	,
+	"menu":{
+		"login"     : "Machen Sie Ihr Login",
+		"home"      : "Nach hause",
+		"codes"     : "Meine Codes",
+		"favoritos" : "Meine Favoriten",
+		"pesquisa"  : "Anwendungen",
+		"sair"      : "Zu gehen"
+   },
+   "login":{
+		"frase"    :"Hier verbindet sich alles",
+		"page"     : "Eintreten",
+		"usuario"  :"Benutzer",
+		"senha"    :"Passwort",
+		"esqueceu" :"Passwort vergessen?",
+		"ou"       :"oder",
+		"conta"    : "Ein konto erstellen"
+
+   },
+   "recupera_senha":{
+	   "page" :"PASSWORT ERHALTEN",
+	   "texto_1":"Geben Sie Ihre E-Mail-Adresse ein und gehen Sie zu",
+	   "texto_2":"Folgen Sie den an Ihre E-Mail gesendeten Schritten, um ein neues Passwort zu erstellen."
+
+   },
+   "meus_codes":{
+		 "page" : "Meine Codes",
+		 "campo" :"Suchcode",
+		 "code_privado":"Dieser Code ist privat"
+   }
+   ,
+   "criar_code":{
+	   "texto" : "Wählen Sie Ihren Code",
+	   "campo" :  "Wählen Sie Ihren Code",
+	   "btn_cancelar" :"Stornieren",
+	   "btn_salvar"   : "Um zu sparen"
+   }
+   ,
+   "menu_code":{
+	  "page"  :"Menü",
+	  "texto" :"Wählen Sie Ihren Code",
+	  "seg_1" :"Titel",
+	  "seg_2" : "Bild und Video",
+	  "seg_3" : "Link",
+	  "menu_1" : "Bild",
+	  "menu_2" : "Dokumente",
+	  "menu_3" : "Vídeo",
+	  "menu_4" : "Kontakte",
+	  "button" : "Zu veröffentlichen"
+   }
+   ,
+   "titulo" :{
+		"titulo": "Titel",
+		"descricao"	:"Beschreibung einfügen",
+		"senha"     : "Passwort",
+		"ativa_senha" : "Passwort aktivieren"
+
+   },
+   "push":{
+		"texto":"Eine Benachrichtigung senden",
+		"campo_1":"Titel eingeben",
+		"campo_2":"Nachricht",
+		"btn_enviar":"Senden",
+		"btn_cancelar":"Stornieren"
+   }
+   ,
+   "link":{
+	 "campo":"Link einfügen",
+	 "ativar_lik":"Link einfügen"
+   },
+   "minha_conta":{
+	"nome":"Name",
+	"sobrenome":"Nachname",
+	"email":"Email",
+	"empresa":"Firmenname",
+	"segmento":"Segment",
+	"cep":"CEP",
+	"cidade":"Stadt",
+	"estado":"Zustand",
+	"page":"Mein konto"
+   },
+   "meus_contatos":{
+		"page":"Meine Kontakte",
+		"texto":"keine Aufzeichnungen.",
+		"departamento":"Abteilung",
+		"pais" : "Land",
+		"contato":"Kontaktieren Sie uns",
+		"email":"E-Mail-Adresse eingeben",
+		"campo_link":"Fügen Sie den Link ein"
+   },
+   "videos":{
+		"link":"externer Videolink",
+		"galeria":"Galerie",
+		"btn_cancelar":"Stornieren",
+		"link_video":"Melden Sie den Link zu Ihrem Video",
+		"link_texto":"Melden Sie den Link",
+		"btn_pausar":"pause",
+		"video_selecionado": "Ausgewähltes Video:",
+		"enviando": "Senden:",
+		"outro_video":"Möchten Sie ein weiteres Video einreichen?",
+		"enviado_video":"ERFOLGREICH GESENDET"	,
+		"page":"Video hochladen"	,
+		"erro_envio":"Upload konnte nicht abgeschlossen werden!",
+		"selecione_video":"Wählen Sie vor dem Senden ein Video aus",
+		"selecione":"Auswählen"
+
+   }
+   ,
+   "image":{
+		"camera":"Kamera",
+		"galeria":"Galerie",
+		"btn_cancelar":"Stornieren",
+		"msg":"Sie haben die Anzahl der im Paket verfügbaren Uploads von Bildern erreicht",
+		"arq_selecione":"Wählen Sie vor dem Senden ein Bild aus"
+   },
+   
+   "cupom":{
+	"title":"Mit KSCODE gewinnen",
+	"texto":"Geben Sie ein Unternehmen als Partner ein und gewinnen Sie.",
+	"frase":"Teilen Sie Ihren Gutschein",
+	"compartilhe":"Teilen Sie dies"
+   },
+   "bonus":{
+	    "saldo_dp" :"Saldo vorhanden",
+	    "utl_pgto": "Letzte Zahlung",
+	    "seg_1":"Übersicht Vertrieb",
+	    "seg_2":"Indikationen",
+	    "seg_3":"Info. Finanzdienstleistungen",
+	    "tp_conta" : "Kontotyp",
+	    "banco": "Bank",
+	    "indica":"Derzeit keine Angaben.",
+		"indica_list":"Anzeige erfolgt am:",
+		"c_Corrente":"Current",
+		"C_Poupanca":"Einsparungen",
+		"msg_ag":"Agentur (keine Ziffer)",
+		"msg_conta":"Stellige Nummer",
+		"msg_titular":"Inhaber",
+		"msg_cpf":"CPF-Halter",
+		"msg_banco":"Bank",
+		"page":"Bonus",
+		"texto_1":"Geben Sie Ihre Bankkontodaten ein, um die Werte zu erhalten.",
+		"texto_2":"Das eingegebene Konto muss auf Ihren Namen lauten."
+		
+
+   },
+   "default":{
+	"page_doc":"Dokumente",
+	"page_fav":"Hístorico von Codes",
+	"load_aguarde":"Warten Sie ...",
+	"load_enviando":"Senden ...",
+	"page_pesquisa":"Suche",
+	"pacote" :"paket",
+	"vencimento":"Reife",
+	"dias" :"Tage",
+	"videos":"Videos von",
+	"imagem":"Bilder",
+	"msg_exlcuir":"Möchten Sie dieses Element wirklich löschen?",
+	"page_conta":"Mein konto",
+	"btn_salvar":"Speichern",
+	"btn_cancelar":"Abbrechen",
+	"btn_publicar":"Veröffentlichen",
+	"btn_continuar":"Fortfahren",
+	"btn_ircode":"Gehe zu CODE",
+	"btn_fechar" : "Schliessen",
+	"btn_excluir" : "Visitenkarten",
+	"excluir_msg" :"Erfolgreich gelöscht",
+	"msg_erro"   :"Ein unerwarteter Fehler ist aufgetreten",
+	"visite_code" : "Besuchen Sie meinen Code",
+	"msg_pacote"  : "Vous avez atteint le nombre de codes disponibles dans le package.",
+	"msg_video"   : "Sie haben die Anzahl der im Paket verfügbaren Uploads von Videos erreicht",
+	"info"        : "Information",
+	"msg_servidor" : "Verbindung zum Server konnte nicht hergestellt werden!",
+	"msg_sucesso" : "Le informazioni sono state salvate con successo",
+	"campo_obrigatorio":"Dieses Feld ist erforderlich.",
+	"aviso" : "HINWEIS" ,
+	"msg_aviso":"Wählen Sie vor dem Senden ein Dokument aus",
+	"arq_invalido":"Ungültige Datei",
+	"arq_msg":"Wählen Sie eine Datei aus",
+	"sim" :"ja",
+	"nao":"Nicht",
+	"pesquisa":"Ihre Suche ergab keine Ergebnisse.",
+	"msg_code":"Möchten Sie diesen Code besuchen ?",
+	"msg_link":"Möchten Sie diesen Link besuchen?"
+
+
+}
+
+}

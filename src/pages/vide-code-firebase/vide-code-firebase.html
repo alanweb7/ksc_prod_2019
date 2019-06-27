@@ -1,0 +1,49 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+      <ion-title>{{page}}</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+
+<ion-content padding>
+   
+   <ion-grid>
+        <ion-row>
+                <ion-col col-12>
+                        <div class='input-wrapper' *ngIf="selecionado" >
+                                <label for='input-file'>
+                                  {{selecione}}
+                                </label>
+                                <input id='input-file' type='file' value='' accept="video/*" (change)="atualizaArquivo($event)"/>
+                              
+                              </div>
+                         <div *ngIf="name"><strong><span >{{video_selecionado}}{{name}}</span></strong></div>  
+                </ion-col>
+                <ion-col col-12>
+                        <strong *ngIf="porcentagem"><h2>{{enviando}}{{porcentagem}}%</h2></strong>
+                </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6>
+                <button ion-button block class="facebook" (click)="enviarArquivo()" [disabled]="!isEnviando">{{btn_enviar}}</button>  
+            </ion-col>
+            <ion-col col-6>
+                    <button ion-button block class="bt-cancel" (click)="uploadCancel()" [disabled]="!isCancel">{{btn_cancelar}}</button>  
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6>
+                    <button ion-button block  class="bt-pause" (click)="uploadPause()" [disabled]="!ispause">{{btn_pausar}}</button>  
+            </ion-col>
+            <ion-col col-6>
+                
+                <button ion-button block class="bt-resume" (click)="uploadResume()" [disabled]="!isResume">{{btn_continuar}}</button>  
+               
+            </ion-col>
+        </ion-row>
+    </ion-grid>   
+
+  
+ <!--  <progress-bar [progress]="total"></progress-bar> -->
+</ion-content>

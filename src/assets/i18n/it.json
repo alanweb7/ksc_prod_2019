@@ -1,0 +1,200 @@
+{
+	"home" : {
+		"heading" 		: "tutto si collega qui",
+		"button" 	    : "Accesso",
+		"pesquisa"      : "RICERCA",
+		"adquira"       : "PRENDI IL TUO CODE",
+		"code_existe"   : "KSCODE non esiste!"
+
+	},
+	"menu":{
+		"login"     : "Fai il tuo login",
+		"home"      : "Presto",
+		"codes"     : "I miei codes",
+		"favoritos" : "I miei preferiti",
+		"pesquisa"  : "Applicazioni",
+		"sair"      : "partire"
+   }
+   ,
+   "login":{
+	"frase"    :"Tutto si collega qui",
+	"page"     : "Per entrare",
+	"usuario"  :"utente",
+	"senha"    :"password",
+	"esqueceu" :"Hai dimenticato la password?",
+	"ou"       :"o",
+	"conta"    : "Crea un account"
+   },
+   "recupera_senha":{
+	   "page" :"RECUPERA PASSWORD",
+	   "texto_1":"Inserisci la tua email e poi vai a",
+	   "texto_2":"segui i passaggi inviati alla tua email per creare una nuova password."
+
+   }
+   ,
+   "meus_codes":{
+		"page" : "I miei codes",
+		"campo" :"Code di ricerca",
+		"code_privado":"Questo codice è privato"
+   }  
+   ,
+   "criar_code":{
+	   "texto" : "Scegli il tuo code",
+	   "campo" :  "Inserisci il tuo code",
+	   "btn_cancelar" :"Annullare",
+	   "btn_salvar"   : "Per salvare"
+   }
+   ,
+   "menu_code":{
+	  "page"  :"Menu",
+	  "texto" :"Scegli il tuo code",
+	  "seg_1" :"Titolo",
+	  "seg_2" : "Immagine e Video",
+	  "seg_3" : "Link",
+	  "menu_1" : "Immagine",
+	  "menu_2" : "Documentazione",
+	  "menu_3" : "Video",
+	  "menu_4" : "Contatti",
+	  "button" : "Pubblicare"
+   },
+   "titulo" :{
+	"titulo": "Titolo",
+	"descricao"	:"Inserire la descrizione",
+	"senha"     : "Password",
+	"ativa_senha" : "attivare la password?"
+
+   }
+   ,
+   "push":{
+		"texto":"Invia una notifica",
+		"campo_1":"Titolo",
+		"campo_2":"Messaggio",
+		"btn_enviar":"Inviare",
+		"btn_cancelar":"Annullare"
+   }
+   ,
+   "link":{
+	 "campo":"inserire il link",
+	 "ativar_lik":"solo link?"
+   }
+   ,
+   "minha_conta":{
+	"nome":"Nome",
+	"sobrenome":"Cognome",
+	"email":"Email",
+	"empresa":"Nome della società",
+	"segmento":"Segmento",
+	"cep":"Codice postale",
+	"cidade":"Città",
+	"estado":"Stato",
+	"page":"il mio account"
+},
+   "meus_contatos":{
+		"page":"I miei contatti",
+		"texto":"non ci sono record.",
+		"departamento":"Reparto",
+		"pais" : "Paese",
+		"contato":"Contattaci",
+		"email":"Inserisci l'indirizzo email",
+		"campo_link":"Incolla il link"
+   }
+   ,
+   "videos":{
+		"link":"link video esterno",
+		"galeria":"galleria",
+		"btn_cancelar":"annullare",
+		"link_video":"Segnala il link al tuo video",
+		"link_texto":"Segnala il link",
+		"btn_pausar":"pausa",
+		"video_selecionado": "Video selezionato:",
+		"enviando": "Invio:",
+		"outro_video":"Vuoi inviare un altro video?",
+		"enviado_video":"INVIATO CON SUCCESSO"	,
+		"page":"Carica video"	,
+		"erro_envio":"Impossibile completare il caricamento!",
+		"selecione_video":"Seleziona un video prima di inviarlo",
+		"selecione":"Selezionare"
+   }
+   ,
+   "image":{
+		"camera":"camera",
+		"galeria":"galleria",
+		"btn_cancelar":"annullare",
+		"msg":"Hai raggiunto la quantità di caricamenti di immagini disponibili nel pacchetto",
+		"arq_selecione":"Seleziona un'immagine prima di inviarla"
+   }
+   ,
+   "cupom":{
+	"title":"Vinci con KSCODE",
+	"texto":"Inserisci una società per diventare partner e vinci.",
+	"frase":"Condividi il tuo coupon",
+	"compartilhe":"Condividi questo"
+   },
+   "bonus":{
+	    "saldo_dp" :"SALDO DISPONIBILE",
+	    "utl_pgto": "Ultimo pagamento",
+	    "seg_1":"Panoramica delle vendite",
+	    "seg_2":"indicazioni",
+	    "seg_3":"Info. Servizi finanziari",
+	    "tp_conta" : "Tipo di conto",
+	    "banco": "banca",
+	    "indica":"Nessuna indicazione in questo momento.",
+		"indica_list":"indicazione fatta a:",
+		"c_Corrente":"Corrente",
+		"C_Poupanca":"risparmi",
+		"msg_ag":"Agenzia (nessuna cifra)",
+		"msg_conta":"Numero della cifra",
+		"msg_titular":"titolare",
+		"msg_cpf":"CPF titolare",
+		"msg_banco":"banca",
+		"page":"indennità",
+		"texto_1":"Inserisci i dettagli del tuo conto bancario per ricevere i valori.",
+		"texto_2":"L'account che inserisci deve essere nel tuo nome."
+		
+
+   },
+   "default":{
+	"page_doc":"Documentazione",
+	"page_fav":"Hístorico di codes",
+	"load_aguarde":"Attendere...",
+	"load_enviando":"invio...",
+	"page_pesquisa":"ricerca",
+	"pacote" :"pacchetto",
+	"vencimento":"maturità",
+	"dias" :"giorni",
+	"videos":"video",
+	"imagem":"immagini",
+	"msg_exlcuir":"Sei sicuro di voler eliminare questo elemento?",
+	"page_conta":"Il mio account",
+	"btn_salvar":"Salvare",
+	"btn_cancelar":"Annullare",
+	"btn_publicar":"Pubblicare",
+	"btn_continuar":"Continuare",
+	"btn_ircode":"Vai al  CODE",
+	"btn_fechar" :"Vicino",
+	
+	
+	"btn_excluir" : "cancellare",
+	"excluir_msg" :"eliminato con successo",
+	"msg_erro"   :"si è verificato un errore imprevisto",
+	"visite_code" : "Visita il mio  Code",
+	"msg_pacote"  : "Ha alcanzado la cantidad de CODES disponibles en el paquete",
+	"msg_video"   : "Hai raggiunto la quantità di caricamenti di video disponibili nel pacchetto",
+	"info"        : "informazioni",
+	"msg_servidor" : "Impossibile connettersi al server!",
+	"msg_sucesso" : "Le informazioni sono state salvate con successo",
+	"campo_obrigatorio":"Questo campo è richiesto.",
+	"aviso" : "ATTENZIONE" ,
+	"msg_aviso":"Seleziona un documento prima di inviarlo",
+	"arq_invalido":"File non valido",
+	"arq_msg":"Seleziona un file",
+	"sim" :"Sì",
+	"nao":"No",
+	"pesquisa":"La tua ricerca non ha prodotto risultati.",
+	"msg_code":"Vuoi visitare questo code?",
+	"msg_link":"Vuoi visitare questo link?"
+
+
+}
+
+}

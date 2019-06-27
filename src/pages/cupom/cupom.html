@@ -1,0 +1,27 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        <ion-title>Ganhe com o KSCODE</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <p>Indique uma empresa para ser parceira e ganhe.</p>
+    <hr>
+    <small>Compartilhe seu cupom</small>
+    <ion-list class="index-formularios3">
+        <ion-item>
+            <ion-input type="text" value="{{cupom}}" disabled="true"></ion-input>
+        
+        </ion-item>
+    
+    </ion-list>
+    <div>
+        <button ion-button block (click)="regularShare()">Compartilhe</button>
+    </div>
+</ion-content>

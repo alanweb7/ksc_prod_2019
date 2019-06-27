@@ -1,0 +1,156 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+          <button ion-button menuToggle>
+              <ion-icon name="menu"></ion-icon>
+          </button>
+           <ion-title>{{page}}</ion-title>
+          <!--  <ion-buttons end>
+                  <button ion-button icon-only (click)="shareSheetShare()">
+                      <ion-icon ios="ios-share" md="md-share"></ion-icon>
+                     
+                  </button>
+                  <button ion-button icon-only  (click)="showPromptPush(code)">
+                      <ion-icon ios="ios-notifications" md="md-notifications"></ion-icon>
+                  </button>
+                  
+           </ion-buttons> -->
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding scroll="false">
+      <div class="topo">
+        <form class="col s12" [formGroup]="cadastroCode" name="cadastroCode">
+          <ion-grid>
+              <ion-row> 
+                  <ion-col >
+                      <p >{{texto}}</p>
+                      
+                      <ion-list class="index-formularios">
+                          <ion-item>
+                              <ion-input type="text" placeholder="Seu code" [(ngModel)]="modelC.name" formControlName="name"  value="{{code}}"></ion-input>
+                          </ion-item>
+                      </ion-list> 
+                  </ion-col>
+              
+              </ion-row>
+          </ion-grid>
+      </form>
+     </div>
+      <!-- AQUI COMEÇA O SEGMENTE DA HOME-->
+      <div>
+          <ion-segment [(ngModel)]="selectedSegment" (ionChange)="onSegmentChanged($event)">
+              <ion-segment-button value="0">
+                   {{seg_1}}
+              </ion-segment-button>
+              <ion-segment-button value="1">
+                 {{seg_2}}
+              </ion-segment-button>
+              <ion-segment-button value="2">
+                 {{seg_3}}
+              </ion-segment-button>
+              
+          </ion-segment>
+      </div>
+      <div [ngSwitch]="selectedSegment" style="margin-bottom: 15%;">
+          <ion-slides #mySlider  (ionSlideDidChange)="onSlideChanged($event)" class="segment-slide">
+            <ion-slide>
+                          <form class="col s12" [formGroup]="cadastroForm" name="cadastroForm">
+                                  <ion-list class="index-formularios">
+                                      <ion-item>
+                                          <ion-label>
+                                              <ion-icon name="pricetag"></ion-icon>
+                                          </ion-label>
+                                          <ion-input name="titulo" type="text" placeholder="{{titulo_lang}}" [(ngModel)]="modelG.titulo" formControlName="titulo"  class="validate" value="{{titulo}}"></ion-input>
+                                      </ion-item>
+                                      
+                                      <ion-item>
+                                              <ion-label>
+                                                   <ion-icon name="list-box"></ion-icon>
+                                              </ion-label>
+                                               <ion-textarea autosize [(ngModel)]="modelG.descricao" name="descricao" class="textarea" placeholder="{{descricao_lang}}"  formControlName="descricao" value="{{descricao}}" ></ion-textarea> 
+                                      
+                                         
+                                      </ion-item>
+                                      <ion-item>
+                                        <ion-label>
+                                            <ion-icon name="key"></ion-icon>
+                                        </ion-label>
+                                        <ion-input name="password" type="text" placeholder="{{senha}}" [(ngModel)]="modelG.password" formControlName="password"  class="validate" value="{{password}}"></ion-input>
+                                    </ion-item>
+                                    
+                                      <ion-item>
+                                        <ion-label>{{ativa_senha}}</ion-label>
+                                        <ion-toggle [(ngModel)]="model.isprivate" color="danger"  formControlName="isprivate" (ionChange)="change_senha(model.isprivate)" checked="{{modelG.isprivate}}"></ion-toggle>
+            
+                                      </ion-item>
+                                      
+                                  </ion-list>
+                               
+                          </form>
+          </ion-slide>
+          <ion-slide>
+              <ion-grid>
+                     <ion-row>
+                        <ion-col>
+                          <div class="box-menu" (click)="ShowCam()"><img src="assets/icon/11_Imagens.png">
+                            <h3>{{menu_1}}</h3></div>
+                        </ion-col>
+                        <ion-col>
+                           <div class="box-menu" (click)="ShowDoc()"><img src="assets/icon/11_Documentos.png">
+                            <h3>{{menu_2}}</h3></div>
+                        </ion-col>
+                        
+                      </ion-row>
+                      <ion-row>
+  
+                              <ion-col>
+                                  
+                                <div class="box-menu" (click)="ShowVideo()"><div class="icon"></div> <img src="assets/icon/11_Vídeos.png">
+                                  <h3>{{menu_3}}</h3></div>
+                              </ion-col>
+                              <ion-col>
+                                      <div class="box-menu" (click)="ShowContato()"><img src="assets/icon/11_Contatos.png">
+                                        <h3>{{menu_4}}</h3></div>
+                              </ion-col>
+                         
+                      </ion-row>
+
+              </ion-grid>
+          </ion-slide>
+          <ion-slide>   
+                  <form class="" [formGroup]="loginForm">
+                      <ion-list class="index-formularios">
+                          <ion-item>
+                              <ion-label>
+                                  <ion-icon name="link"></ion-icon>
+                              </ion-label>
+                              <ion-input name="nome" type="text" [(ngModel)]="model.link"  formControlName="link" placeholder="{{campo}}" value="{{link}}"></ion-input>
+                          </ion-item>
+                          <div><p *ngIf="errorEmail" class="error"> {{messageEmail}}</p></div>  
+                          <ion-item>
+                            <ion-label>{{ativar_lik}}</ion-label>
+                            <ion-toggle [(ngModel)]="model.islink" color="danger"  formControlName="islink" (ionChange)="change_segmento(model.islink)" checked="{{model.isLink}}"></ion-toggle>
+
+                          </ion-item>
+
+                      </ion-list>
+                  </form>
+          </ion-slide>
+          
+         
+              
+      </ion-slides>
+                
+      </div>
+  </ion-content>
+  <!-- CONTENT -->
+  <ion-footer> 
+      <ion-toolbar>
+       <!--    <button class="bt-cadatro" round color="danger" (click)="editCode()">{{btn_publicar}}</button>
+    -->       <button ion-button block round (click)="editCode()" class="facebook">{{btn_publicar}}</button>  
+         
+      </ion-toolbar>
+  </ion-footer>

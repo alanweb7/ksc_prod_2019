@@ -1,0 +1,35 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title>{{page}}</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="closeModal()">
+          <ion-icon name="close"></ion-icon>
+      </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="pg-login">
+    <div class="alert alert-info" role="alert">
+        {{texto_1}} <b><i>{{page}}</i></b>{{texto_2}}
+    </div>
+     <div><p *ngIf="erro" ion-text color="{{class}}"> {{message}}</p></div>
+     <form class="" [formGroup]="loginForm">
+            <ion-list class="index-formularios">
+                <ion-item>
+                    <ion-label>
+                        <ion-icon name="mail"></ion-icon>
+                    </ion-label>
+                    <ion-input name="email" type="email" [(ngModel)]="email"  formControlName="email" placeholder="{{text_email}}"></ion-input>
+                </ion-item>
+                  <div><p *ngIf="errorEmail" ion-text color="{{class}}"> {{messageEmail}}</p></div>
+            </ion-list>
+    </form> 
+    <div>
+        <button ion-button block (click)="forgotpass()">{{page}}</button>
+    </div>
+ 
+</ion-content>

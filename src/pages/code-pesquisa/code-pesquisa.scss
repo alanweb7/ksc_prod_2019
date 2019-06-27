@@ -1,0 +1,69 @@
+page-code-pesquisa {
+    .toolbar-md {
+        padding: 4px;
+        min-height: 100px;
+        background: rgba(33,0,53,1) !important;
+        background: -moz-linear-gradient(left, rgba(33,0,53,1) 0%, rgba(33,0,53,1) 45%, rgba(116,3,59,1) 84%, rgba(116,3,59,1) 92%, rgba(116,3,60,1) 100%)!important;
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33,0,53,1)), color-stop(45%, rgba(33,0,53,1)), color-stop(84%, rgba(116,3,59,1)), color-stop(92%, rgba(116,3,59,1)), color-stop(100%, rgba(116,3,60,1)))!important;
+        background: -webkit-linear-gradient(left, rgba(33,0,53,1) 0%, rgba(33,0,53,1) 45%, rgba(116,3,59,1) 84%, rgba(116,3,59,1) 92%, rgba(116,3,60,1) 100%)!important;
+        background: -o-linear-gradient(left, rgba(33,0,53,1) 0%, rgba(33,0,53,1) 45%, rgba(116,3,59,1) 84%, rgba(116,3,59,1) 92%, rgba(116,3,60,1) 100%)!important;
+        background: -ms-linear-gradient(left, rgba(33,0,53,1) 0%, rgba(33,0,53,1) 45%, rgba(116,3,59,1) 84%, rgba(116,3,59,1) 92%, rgba(116,3,60,1) 100%)!important;
+        background: linear-gradient(to right, rgba(33,0,53,1) 0%, rgba(33,0,53,1) 45%, rgba(116,3,59,1) 84%, rgba(116,3,59,1) 92%, rgba(116,3,60,1) 100%)!important;
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#210035', endColorstr='#74033c', GradientType=1    )!important;
+    }
+        .toolbar-ios {
+        padding: 4px;
+        min-height: 100px;
+    }
+     .toolbar-md-primary .toolbar-background-md {
+        background: rgba(33,0,53,1)  !important;
+        background: -moz-linear-gradient(left, rgba(33,0,53,1) 0%, rgba(33,0,53,1) 45%, rgba(116,3,59,1) 84%, rgba(116,3,59,1) 92%, rgba(116,3,60,1) 100%)!important;
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33,0,53,1)), color-stop(45%, rgba(33,0,53,1)), color-stop(84%, rgba(116,3,59,1)), color-stop(92%, rgba(116,3,59,1)), color-stop(100%, rgba(116,3,60,1)))!important;
+        background: -webkit-linear-gradient(left, rgba(33,0,53,1) 0%, rgba(33,0,53,1) 45%, rgba(116,3,59,1) 84%, rgba(116,3,59,1) 92%, rgba(116,3,60,1) 100%)!important;
+        background: -o-linear-gradient(left, rgba(33,0,53,1) 0%, rgba(33,0,53,1) 45%, rgba(116,3,59,1) 84%, rgba(116,3,59,1) 92%, rgba(116,3,60,1) 100%)!important;
+        background: -ms-linear-gradient(left, rgba(33,0,53,1) 0%, rgba(33,0,53,1) 45%, rgba(116,3,59,1) 84%, rgba(116,3,59,1) 92%, rgba(116,3,60,1) 100%)!important;
+        background: linear-gradient(to right, rgba(33,0,53,1) 0%, rgba(33,0,53,1) 45%, rgba(116,3,59,1) 84%, rgba(116,3,59,1) 92%, rgba(116,3,60,1) 100%)!important;
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#210035', endColorstr='#74033c', GradientType=1    )!important;
+        //  height: 100px;
+      
+    }
+    .searchbar .searchbar-clear-icon {
+        background-size: 15px;
+        background-color: transparent;
+    }
+    .searchbar-md {
+        /* background-size: 15px; */
+        /* background: #210035 !important; */
+        background: -webkit-gradient(left top, right top, color-stop(0%, #210035), color-stop(45%, #210035), color-stop(84%, #74033b), color-stop(92%, #74033b), color-stop(100%, #74033c))!important;
+        background: -webkit-gradient(linear, left top, right top, from(#210035), color-stop(45%, #210035), color-stop(84%, #74033b), color-stop(92%, #74033b), to(#74033c))!important;
+        background: linear-gradient(to right, #210035 0%, #210035 45%, #74033b 84%, #74033b 92%, #74033c 100%)!important;
+        padding: 20px;
+    }
+    .logo_home{
+      //  margin-top: 10%;
+       // background: -moz-linear-gradient(-45deg, rgba(33,0,53,1) 0%, rgba(111,3,61,1) 100%) !important;
+       // background: -webkit-linear-gradient(-45deg, rgba(33,0,53,1) 0%, rgba(111,3,61,1) 100%) !important;
+//background: linear-gradient(135deg, rgba(33,0,53,1) 0%, rgba(111,3,61,1) 100%) !important;
+      //  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001cf5', endColorstr='#00bffa', GradientType=1) !important;
+       // height: 100px;
+       // background: #000;
+          p{
+             margin-top: 2%;
+             margin-bottom: 2%;
+             color: #fff;
+             text-align: center;
+         
+             font-size: 12px;
+          }
+          img{
+            display: block;
+            width: 60%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+         }
+        
+        
+     }
+}

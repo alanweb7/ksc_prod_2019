@@ -1,0 +1,51 @@
+<ion-header>
+   <ion-navbar color="primary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-buttons end>
+            <button ion-button icon-only (click)="showAlert()">
+                <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon>
+             
+            </button>
+             
+              </ion-buttons>
+      <ion-title>{{page}}</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  <ion-content>
+   <div  style="margin-bottom: 20%;">
+       <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"  (ionClear)="onCancel($event)" placeholder="{{campo}}"></ion-searchbar>
+          <ion-list *ngFor="let code of meus_codes" >
+             <ion-card >
+                                   
+                 <ion-card-content>
+                  <ion-grid>
+                      <ion-row class="botoes">
+                        <ion-col col-5>
+                           <img src="{{code.img_link}}">
+                        </ion-col>
+                        <ion-col col-5> 
+                              <p>  {{code.code}}{{code.descricao}}</p>
+                          </ion-col>
+                         <ion-col col-2>
+                              <button ion-button icon-only clear (click)="presentPopover($event,code.id,code.code,code.card,code.slug)">
+                                    <ion-icon name="more"></ion-icon>
+                                  </button>
+                            <p>{{code.views}}</p>
+                          </ion-col>
+                         
+                      </ion-row>
+                  </ion-grid>
+                </ion-card-content>
+             </ion-card> 
+          </ion-list>
+   <!--   </ng-template>  -->      
+  </div>
+  <ion-fab  right bottom>
+          <button ion-fab color="danger" (click)="validaPacote()"><ion-icon name="add"></ion-icon></button>
+      
+  </ion-fab>
+  </ion-content>
+  

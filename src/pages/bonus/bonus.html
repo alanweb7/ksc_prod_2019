@@ -1,0 +1,174 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        <ion-title>Bônus</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+        <ion-refresher (ionRefresh)="doRefresh($event)">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+             
+            </ion-refresher>
+    <div class="topo-cupom" padding>
+        <h3>{{saldo_dp}}</h3>
+        <h1><span>R$ </span> {{bonus}}</h1>
+        <p>{{ult_pgto}}{{dt_pgto}} R$ {{valor}}</p>
+       <!--  <button ion-button block (click)="TransferModal()">TRANSFERIR SALDO</button>
+        <button ion-button small round (click)="relatorioModal()">EXTRATO FINANCEIRO</button>
+        <a></a> -->
+    </div>
+     <!-- AQUI COMEÇA O SEGMENTE DA HOME-->
+     <div>
+        <ion-segment [(ngModel)]="selectedSegment" (ionChange)="onSegmentChanged($event)">
+            <ion-segment-button value="0">
+                <!--  {{seg_1}} --> {{seg_resumo}}
+            </ion-segment-button>
+            <ion-segment-button value="1">
+             <!--   {{seg_2}} --> {{seg_indica}}
+            </ion-segment-button>
+            <ion-segment-button value="2">
+             <!--   {{seg_2}} --> {{seg_info}}
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+    <div [ngSwitch]="selectedSegment" style="margin-bottom: 15%;">
+        <ion-slides #mySlider  (ionSlideDidChange)="onSlideChanged($event)" class="segment-slide">
+          <ion-slide>
+                <ion-grid>
+                        <ion-row class="box-list">
+                            <ion-col col-5> 
+                                    <ion-item>
+                                            <ion-label>
+                                                <ion-icon name="calendar"></ion-icon>
+                                            </ion-label>
+                                            <!-- <ion-input type="tel" name="birthday" placeholder="00/00/0000" [(ngModel)]="pesquisa.data_init" class="validate"  value="{{dt_nasc}}" [brmasker]="{mask:'00/00/0000', len:10}" ></ion-input>
+                                             -->
+                                             <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="pesquisa.data_init"></ion-datetime>
+                                        </ion-item>
+                            </ion-col>
+                            <ion-col col-5> 
+                                    <ion-item>
+                                            <ion-label>
+                                                <ion-icon name="calendar"></ion-icon>
+                                            </ion-label>
+                                         <!--    <ion-input type="tel" name="birthday" placeholder="00/00/0000" [(ngModel)]="pesquisa.data_fim" class="validate"  value="{{dt_nasc}}" [brmasker]="{mask:'00/00/0000', len:10}" ></ion-input> -->
+                                            <ion-datetime displayFormat="DD/MM/YYYY"  [(ngModel)]="pesquisa.data_fim"  ></ion-datetime>
+                                    </ion-item>
+                            </ion-col>     
+                            <ion-col col-2> 
+                                    <button ion-fab mini (click)="searchList()"><ion-icon name="search"></ion-icon></button>
+                            </ion-col>
+                        </ion-row>
+                       <!--  <ion-row class="box-list">
+                                
+                        </ion-row> -->
+                    </ion-grid>
+              
+                   
+               <!--  <h1>{{question}}</h1> -->
+                <ion-card-content>
+                        <canvas #barCanvas></canvas>
+                      </ion-card-content>
+          </ion-slide>
+          <ion-slide>
+                <div class="list-estabelecimentos">
+                      <!--   <h1>INDICAÇÕES DE CLIENTES</h1> -->
+                        <p *ngIf="cliente && cliente.length == 0; else moviesList">{{indica}}</p>
+                        <ion-list  *ngFor="let cli of cliente" >
+                                <ion-item>
+                                  <ion-avatar item-start>
+                                    <img src="{{cli.image_user}}">
+                                  </ion-avatar>
+                                  <h2>{{cli.first_name}}</h2>
+                                  <p>{{indica_list}} {{cli.date_created}}</p>
+                                </ion-item>
+                               
+                        </ion-list>
+                        <ng-template #moviesList>  
+                               
+                        </ng-template> 
+                    </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="box-menu-categorias">
+                <div class="alert alert-info" role="alert">
+                    {{texto1}} <b><i>{{texto2}}</i></b>
+                </div>
+                <ion-item-group>
+                        <!-- <ion-item-divider color="light">Adicionar novo banco</ion-item-divider> -->
+                        <form class="col s12" [formGroup]="cadastroForm" name="cadastroForm">
+                        <ion-list class="index-formularios2">
+                            <ion-item>
+                                    <ion-label>{{msg_banco}}</ion-label>
+                                    <ion-select [(ngModel)]="model.banco" (ionChange)="change_banco($event)" formControlName="banco" [compareWith]="compareFn">
+                                        <ion-option value="001 – Banco do Brasil S.A.">001 – Banco do Brasil S.A.</ion-option>
+                                        <ion-option value="341 – Banco Itaú S.A.">341 – Banco Itaú S.A.</ion-option>
+                                        <ion-option value="652 – Itaú Unibanco Holding S.A.">652 – Itaú Unibanco Holding S.A.</ion-option>
+                                        <ion-option value="237 – Banco Bradesco S.A.">237 – Banco Bradesco S.A.</ion-option>
+                                        <ion-option value="033 – Banco Santander (Brasil) S.A.">033 – Banco Santander (Brasil) S.A.</ion-option>
+                                        <ion-option value="745 – Banco Citibank S.A.">745 – Banco Citibank S.A.</ion-option>
+                                        <ion-option value="399 – HSBC Bank Brasil S.A. – Banco Múltiplo">399 – HSBC Bank Brasil S.A. – Banco Múltiplo</ion-option>
+                                        <ion-option value="104 – Caixa Econômica Federal">104 – Caixa Econômica Federal</ion-option>
+                                        <ion-option value="389 – Banco Mercantil do Brasil S.A.">389 – Banco Mercantil do Brasil S.A.</ion-option>
+                                        <ion-option value="453 – Banco Rural S.A.">453 – Banco Rural S.A.</ion-option>
+                                        <ion-option value="422 – Banco Safra S.A.">422 – Banco Safra S.A.</ion-option>
+                                        <ion-option value=" 633 – Banco Rendimento S.A."> 633 – Banco Rendimento S.A.</ion-option>
+                                     
+                                    </ion-select>
+                                  
+                                      
+                               
+                            </ion-item>
+                            <div><p *ngIf="errorbanco" class="error"> {{messagebanco}}</p></div>
+                            <ion-item>
+                                <ion-label>{{tp_conta}}</ion-label>
+                                <ion-select [(ngModel)]="model.tipo" (ionChange)="change_tipo($event)" formControlName="tipo" [compareWith]="compareFn">
+                                    <ion-option value="corrente">{{c_Corrente}}</ion-option>
+                                    <ion-option value="poupança">{{C_Poupanca}}</ion-option>
+                                </ion-select>
+                            </ion-item>
+                            <div><p *ngIf="errortipo" class="error"> {{messagetipo}}</p></div>
+                            <ion-item>
+                                <ion-input type="number" placeholder="{{msg_ag}}"  [(ngModel)]="model.agencia" formControlName="agencia" value="{{agencia}}"> </ion-input>
+                            </ion-item>
+                            <div><p *ngIf="erroragencia" class="error"> {{messageagencia}}</p></div>
+                            <ion-item>
+                                <ion-input type="number" placeholder="{{msg_conta}}"  [(ngModel)]="model.conta" formControlName="conta" value="{{conta}}"></ion-input>
+                            </ion-item>
+                            <div><p *ngIf="errorconta" class="error"> {{messageconta}}</p></div>
+                            <!-- <ion-item>
+                                <ion-input type="number" placeholder="Dígito"  [(ngModel)]="model.digito" formControlName="digito"></ion-input>
+                            </ion-item> -->
+                           <!--  <div><p *ngIf="errorDig" class="error"> {{messageDig}}</p></div> -->
+                            <ion-item>
+                                <ion-input type="text" placeholder="{{msg_titular}}"   [(ngModel)]="model.titular" formControlName="titular" value="{{titular}}"></ion-input>
+                            </ion-item>
+                            <div><p *ngIf="errortitular" class="error"> {{messagetitular}}</p></div> 
+                            <ion-item>
+                                   <!--  <ion-label>
+                                        <ion-icon name="finger-print"></ion-icon>
+                                    </ion-label> -->
+                                    <ion-input type="tel" placeholder="{{msg_cpf}}"[(ngModel)]="model.cpf" formControlName="cpf" value="{{cpf}}" [brmasker]="{mask:'000.000.000-00', len:14}"></ion-input>
+                                </ion-item>
+                            <div><p *ngIf="errorcpf" class="error"> {{messagecpf}}</p></div>
+                            <div class="index-formularios">
+                                <button ion-button block (click)="setConta()">{{btn_salvar}}</button>
+                            </div>
+                        </ion-list>
+                      </form>
+                    </ion-item-group>
+            </div>
+          </ion-slide>
+        </ion-slides>
+    </div>          
+  
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+
+  
+  <ion-navbar color="primary">
+    <ion-title>{{page}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+   <div class="select" (click)="open_file()"> 
+        <ion-icon color="primary" class="icone_tam" name="clipboard"></ion-icon>
+        <ion-icon color="primary" class="icone" name="add"></ion-icon>
+       
+   </div>
+   <ion-list class="list-documentos" >
+    <ion-item *ngFor="let doc of docs" >
+      <h2 (click)="viewPDF(doc.doc_link)"> {{ doc.file_name }}</h2>
+      <button  ion-fab mini item-end  (click)="showConfirm(doc.id)" *ngIf="doc.id"><ion-icon name="trash" ></ion-icon></button>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
+<ion-footer> 
+  <ion-toolbar color="primary">
+      <a class="bt-cadatro"  color="primary" (click)="enviar()">{{btn_publicar}}</a>
+  </ion-toolbar>
+</ion-footer>

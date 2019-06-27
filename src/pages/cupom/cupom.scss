@@ -1,0 +1,50 @@
+page-cupom {
+    ion-content {
+        background: url(../assets/imgs/fundo.png);
+        background-size: cover;
+    }
+    .button{
+        background: rgb(5, 32, 73) !important;
+        background: -moz-linear-gradient(-45deg, rgba(5, 32, 73,1) 0%, rgb(0, 0, 0) 100%) !important;
+        background: -webkit-linear-gradient(-45deg, rgba(5, 32, 73 ,1) 0%, rgb(0, 0, 0) 100%) !important;
+        background: linear-gradient(135deg, rgba(5, 32, 73, 1) 0%, rgb(0, 0, 0) 100%) !important;
+        color: #FFF;
+        font-weight: normal;
+    }
+    .index-formularios3 {
+       
+        .item {
+            background: #fff;
+            padding-left: 0;
+            min-height: 3.5em;
+            margin-top: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            flex-direction: row-reverse;
+            .label {
+                margin: 0;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                .icon {
+                    margin: 0;
+                    color: #0071f8;
+                }
+            }
+            .text-input {
+                color: #555;
+                &::placeholder {
+                    color: #555;
+                    opacity: 0.5;
+                }
+            }
+
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+    hr {
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,237 @@
+page-bonus {
+    .error{
+        color:red;
+    }
+    .fab[mini] {
+        margin: 7px 0px 0px 10px;
+        width: 35px;
+        height: 35px;
+        line-height: 22px;
+        float: right;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        ion-icon {
+            font-size: 2em;
+        }
+    }
+    .fab {
+        background: rgb(5, 32, 73) !important;
+        background: -moz-linear-gradient(-45deg, rgba(5, 32, 73,1) 0%, rgb(0, 0, 0) 100%) !important;
+        background: -webkit-linear-gradient(-45deg, rgba(5, 32, 73 ,1) 0%, rgb(0, 0, 0) 100%) !important;
+        background: linear-gradient(135deg, rgba(5, 32, 73, 1) 0%, rgb(0, 0, 0) 100%) !important;
+    } 
+    .button{
+        background: rgb(5, 32, 73) !important;
+        background: -moz-linear-gradient(-45deg, rgba(5, 32, 73,1) 0%, rgb(0, 0, 0) 100%) !important;
+        background: -webkit-linear-gradient(-45deg, rgba(5, 32, 73 ,1) 0%, rgb(0, 0, 0) 100%) !important;
+        background: linear-gradient(135deg, rgba(5, 32, 73, 1) 0%, rgb(0, 0, 0) 100%) !important;
+        color: #FFF;
+        font-weight: normal;
+    }
+    .box-menu-categorias { //padding: 0px 10px 10px 10px;
+           
+        overflow-x: hidden;
+        overflow-y:  scroll;
+        white-space: nowrap;
+    }
+    .index-formularios2 {
+        
+
+        margin-top: -12px;
+        .item {
+            background: transparent;
+            padding-left: 0;
+            min-height: 3.5em;
+            margin-top: 5px;
+            .label {
+                margin: 0;
+                //width: 30px;
+                display: flex;
+                //justify-content: center;
+                .icon {
+                    margin: 0;
+                    color: #000;
+                }
+            }
+            .text-input {
+              
+                color: #555;
+                color: #555;
+                font-size: 13px;
+                text-align: left;
+               // height: 70px;
+                &::placeholder {
+                    color: #555;
+                    opacity: 0.5;
+                }
+               
+                
+            }
+           
+           
+           
+        }
+      }
+    .topo-cupom {
+        padding: 10px 0 15px 0;
+        background: rgb(5, 32, 73) !important;
+        background: -moz-linear-gradient(-45deg, rgba(5, 32, 73,1) 0%, rgb(0, 0, 0) 100%) !important;
+        background: -webkit-linear-gradient(-45deg, rgba(5, 32, 73 ,1) 0%, rgb(0, 0, 0) 100%) !important;
+        background: linear-gradient(135deg, rgba(5, 32, 73, 1) 0%, rgb(0, 0, 0) 100%) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001cf5', endColorstr='#00bffa', GradientType=1) !important;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        text-align: center;
+        position: relative;
+        padding: 16px 16px 31px 16px !important;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        h3 {
+            color: #fff;
+          //  opacity: 0.5;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-top: 1rem !important;
+        }
+        h1 {
+            color: #fff;
+            font-size: 40px;
+            margin-top: 1rem;
+            font-weight: 900;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            span {
+                font-size: 40px;
+               // opacity: 0.5;
+                margin-right: 5px;
+                color: #fff;
+            }
+        }
+        
+        button {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 5px;
+            box-shadow: none;
+            margin-top: 2rem;
+        }
+        button.button-small {
+            background: #fff;
+            border: 2px solid white;
+            border-radius: 5px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+            position: absolute;
+            height: 30px;
+            line-height: 30px;
+            width: 150px;
+            font-size: 10px;
+            bottom: -17px;
+            left: 50%;
+            margin-left: -75px;
+            color: #0071f8;
+        }
+    }
+    .card-md {
+        margin: 16px;
+        border-radius: 2px;
+        width: calc(100% - 32px);
+    }
+    .list-estabelecimentos {
+        text-align: center;
+        > h1 {
+            color: #0071f8;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+        .grid {
+            padding: 0;
+        }
+        .box-list {
+            padding: 10px 0 5px;
+            h2 {
+                text-align: center;
+                width: 100% !important;
+            }
+            p {
+                text-align: center;
+                width: 100% !important;
+            }
+        }
+        .total-servico {
+            border-right: 1px solid #f4f4f4;
+            h2 {
+                font-size: 10px;
+                color: #666;
+                opacity: 0.5;
+            }
+            h1 {
+                color: #666;
+                font-weight: 900;
+                font-size: 1.8rem;
+            }
+        }
+        .servico-pendente {
+            border-right: 1px solid #f4f4f4;
+            h2 {
+                font-size: 10px;
+                color: orange;
+                opacity: 0.5;
+            }
+            h1 {
+                color: orange;
+                font-weight: 900;
+                font-size: 1.8rem;
+            }
+        }
+        .servico-finalizado {
+            border-top: 1px solid #f4f4f4;
+            border-right: 1px solid #f4f4f4;
+            &::last-child {
+                border-right: 0;
+            }
+            h2 {
+                font-size: 10px;
+                color: green;
+                opacity: 0.5;
+            }
+            h1 {
+                color: green;
+                font-weight: 900;
+                font-size: 1.8rem;
+            }
+            &.pagos {
+                h2, h1 {
+                    color: blueviolet;
+                }
+            }
+            &.pendente {
+                h2, h1 {
+                    color: blue;
+                }
+            }
+        }
+        .finalizado-total {
+            border-top: 1px solid #f4f4f4;
+            background: rgba(244, 244, 244, 0.49);
+            padding: 10px;
+            h2 {
+                font-size: 10px;
+                color: #0071f8;
+              // opacity: 0.5;
+            }
+            h1 {
+                color: #0071f8;
+                font-weight: 900;
+            }
+        }
+    }
+     
+    .fab {
+        background: rgb(5, 32, 73) !important;
+        background: -moz-linear-gradient(-45deg, rgba(5, 32, 73,1) 0%, rgb(0, 0, 0) 100%) !important;
+        background: -webkit-linear-gradient(-45deg, rgba(5, 32, 73 ,1) 0%, rgb(0, 0, 0) 100%) !important;
+        background: linear-gradient(135deg, rgba(5, 32, 73, 1) 0%, rgb(0, 0, 0) 100%) !important;
+    } 
+}

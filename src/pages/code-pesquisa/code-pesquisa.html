@@ -1,0 +1,48 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+      <!-- <ion-title>{{page}}</ion-title> -->
+       <div class="logo_home">
+        <img src="assets/imgs/0YCNfH79RwanY6W3GTye_Logo_white.png"/>
+        <p>{{title}}</p>
+  </div>
+      <ion-buttons end>
+          <button ion-button icon-only (click)="closeModal()">
+        <ion-icon name="close"></ion-icon>
+       </button>
+      </ion-buttons>
+    </ion-navbar>
+  
+  </ion-header>
+
+<ion-content>
+   
+   
+    <ion-searchbar 
+   [(ngModel)]="searchTerm"
+    [formControl]="searchControl"
+    (keyup)="onSearchInput()"
+    placeholder="{{campo}}"
+  ></ion-searchbar>
+
+<div *ngIf="searching" class="spinner-container">
+    <ion-spinner name="bubbles"></ion-spinner>
+  </div>
+   <ion-list class="list-cidade" *ngFor="let item of codes | slice:0:9">
+      <ion-card >
+                                   
+          <ion-card-content>
+              <ion-item (click)="pushPage(item.code)">
+                
+                  <ion-col col-5>
+                      <img src="{{item.card}}">
+                  </ion-col>
+                  <ion-col col-7>
+                      {{ item.code }}-{{item.titulo}}
+                      <p>{{item.descricao}}</p>
+                  </ion-col>
+              </ion-item> 
+          </ion-card-content>
+      </ion-card>
+  </ion-list>
+</ion-content>
